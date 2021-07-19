@@ -1,0 +1,26 @@
+Hello, this is meant to be a logbook where I can detail configurations that I have made to 
+my raspberry pi as well as helpful commands that I want to remember in case I forget later on.
+
+---------------------------------------------------------------------------------------
+
+Mon Jul 19 09:50:36 UTC 2021
+systemctl 
+systemctl status ssh.socket #gives info on ssh socket connections this session
+systemctl enable ssh.socket #enables ssh into machine
+
+I should probably mention that I spent longer than I would like to admit on updating /boot/config.txt so
+that I can use SPI. I have a waveshare e-paper display (epd) that I want to turn into a terminal display.
+
+After some fiddling, I got the waveshare python libraries to work under my current os install. 
+This was not super difficult, but there was a lot of going over and making sure that I had the
+required packages installed. Luckily, thispis OS seems to have a lot more useful libraries than the 
+raspberry pi OS (formerly Raspbian). 
+
+spidev is a library that is installed (and reinstalled), but somehow I messed up the install so that 
+I cannot run `python3 main.py`, but have to run it under `sudo python3 main.py`. All of the packages
+are there, so I would have assumed that I don't need privileged access to run the py file. 
+"this is one tough PIL to swallow heh." -milo, Jul 19, 2021
+
+
+
+
